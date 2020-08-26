@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vanilla Cake | Visual Amazing</title>
+  <link rel = "icon" href="https://i.imgur.com/X3e62zr.png" type="image/x-icon">
+  <style>
+    .main-list {
+      font-weight: bold;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+    }
+    a {
+      text-decoration: none;
+    }
+
+    #home {
+      border-right: 2px solid black;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    #about {
+      border-right: 2px solid black;
+      padding-right: 10px;
+    }
+    .page-first-part {
+      position: relative;
+      width: 100%;
+      background-color: rgb(235, 208, 113);
+      top: -16px;
+      overflow: hidden;
+    }
+    .logo {
+      position: absolute;
+      width: 175px;
+      padding-left: 40px;
+    }
+    .name {
+      position: relative;
+      top: 25px;
+      left: 260px;
+      font-size: 2em;
+      border-right: 2px solid black;
+      padding-right: 180px;
+      font-family: "Century Gothic", sans-serif;
+      font-weight: bold;
+    }
+    #motto {
+      position: relative;
+      left: 810px;
+      top: -50px;
+      font-family: "MV Boli", sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+    }
+    #motto-2 {
+      position: relative;
+      left: 1115px;
+      top: -45px;
+      font-family: "Lucida Calligraphy", sans-serif;
+      font-size: 1.225em;
+      font-weigth: bold;
+      padding: 0;
+      margin: 0;
+    }
+    .main-index {
+      border-bottom: 2px solid black;
+      background-color: rgb(247, 207, 67);
+    }
+    .Chicken-chorizo-jambalaya {
+      padding: 0;
+      margin-right: 30px;
+      margin-bottom: 125px;
+      width: 360px;
+      padding-left: 70px;
+      float: left;
+    }
+    .chicken-jambalaya-info {
+      width: 85%;
+    }
+    .recipe-header {
+      font-weight: bold;
+      font-size: 2em;
+    }
+    .dip-font {
+      font-weight: bold;
+      font-family: "Bahnschrift Condensed", sans-serif;
+      font-size: 1.3em;
+    }
+    .time {
+      margin-right: 50px;
+      padding: 0;
+    }
+    .cook {
+      margin-right: 50px;
+      padding: 0;
+    }
+    .recipe-info {
+      font-family: "arial", sans-serif;
+      font-size: 1.3em;
+      margin: 0;
+      padding: 0
+    }
+    .step-forwarder {
+      position: relative;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.3em;
+      width: 80%;
+      padding-left: 45px;
+      padding-top: 30px;
+      height: 200px;
+    }
+    .step {
+      font-weight: bold;
+    }
+    h3 {
+      font-family: sans-serif;
+    }
+    .recipe-mats {
+      width: 35%;
+      position: absolute;
+      left: 104%;
+      top: 25%;
+    }
+    #Ingredients {
+      font-family: sans-serif;
+    }
+    .Chicken-chorizo-jambalaya-second {
+      width: 900px;
+      height: 800px;
+    }
+    .logo-black {
+      width: 20%;
+      position: relative;
+      left: 40%;
+      top: 50%;
+      padding-top: 30px;
+    }
+    .page-bottom-1 {
+      width: 100%;
+      position: relative;
+      border: 2px solid black;
+      margin-top: 1150px;
+      background-color: black;
+    }
+    .social-media {
+      position: relative;
+      color: white;
+      left: 80%;
+      top: -150px;
+      border-right: 3px solid white;
+      z-index: 2;
+    }
+    .media {
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.125em;
+      padding: 10px;
+    }
+    .media-image {
+      width: 35px;
+      float: left;
+      padding-right: 10px;
+    }
+    #social-media-padding {
+      position: relative;
+      top: -20px;
+    }
+    .a-media {
+      color: white;
+    }
+    .last-page-header {
+      font-family: sans-serif;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+    .last-page {
+      padding-left: 25px;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.2em;
+      background-image: url(https://i2.wp.com/onaircode.com/wp-content/uploads/2017/11/Tesselation-Transition.jpg?w=1080&ssl=1);
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-right: 0px;
+      color: black;
+    }
+    .last-page-list {
+      position: relative;
+      left: 20%;
+      top: -40px;
+      color: black;
+    }
+    #last-page-home {
+      padding-bottom: 15px;
+    }
+    #last-page-about {
+      padding-bottom: 15px;
+    }
+    #last-page-contacts {
+      padding-bottom: 15px;
+    }
+    #second-motto {
+      font-family: "Forte", sans-serif;
+      font-size: 2em;
+      text-align: right;
+      position: relative;
+      top: -50px;
+      right: 130px;
+    }
+    .a-color {
+      color: blue;
+      font-weight: bolder;
+    }
+    #id-motto-1 {
+      color: orange;
+    }
+    #id-motto-2 {
+      color: green;
+    }
+    #coma {
+      color: white;
+    }
+    .resize-list {
+      line-height: 1.225em;
+    }
+    .third-image {
+      position: absolute;
+      left: 4%;
+      top: 100%;
+    }
+    #third-image-image {
+      height: 400px;
+      width: 315px;
+    }
+    #vanilla-in-list {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+
+
+
+<body>
+  <!-- The page Header, motto + the name -->
+
+  <div class="page-first-part">
+  <p class="main-index"><span id="home"><a href="../index.html">Home</a></span>
+    <span id="about"><a href="../About.html">About</a></span>
+    <span id="contact"><a href="../Contacts.html">Contacts</a></span>
+  </p>
+  <p class="logo-website-name"><img src="https://i.imgur.com/vlh4Pqs.png" alt="website-logo.img" class="logo"><span class="name"> Visual Amazing </span></p>
+  <p id="motto">Once you have it, You love it !</p>
+  <p id="motto-2">Always the Best</p>
+  </div>
+
+  <!-- Here Starts the coding of Vanilla Cake -->
+  <div class="chicken-jambalaya-info">
+  <p id="beginning"><img src="https://www.dessertfortwo.com/wp-content/uploads/2018/03/mini-vanilla-cake-recipe-720x405.jpg" alt="Vanilla Cake.image" class="Chicken-chorizo-jambalaya"><span class="recipe-header">Vanilla Cake</span>
+    <br><br>
+    <div class="duration"><span class="time"><strong class="dip-font">Prep:</strong> 10 MINS</span> <span class="cook"><strong class="dip.font"> Cook:</strong> 45 MINS</span> <span class="serves"> <strong class="dip-font">Serves: </strong>4 </span>
+    </div>
+    <br><br><em><span class="recipe-info">This Classic Vanilla cake pairs fluffy vanilla cake layers with a silky buttercream. The perfect cake for <strong>Birthdays</strong>, <strong>Weddings</strong>, or any occasion!</span></em>
+    <br><br><span class="recipe-info">It bakes up soft, buttery, and moist, with a fine, delicate crumb and it all comes together in just one bowl. Simple, versatile, and so delicious!</span>
+  </p>
+  <div class="step-forwarder">
+    <h3>Steps:</h3>
+    <p><span class="step">Step 1:</span> Preheat oven to 350°F (177°C). Grease three 9-inch cake pans, line with parchment paper, then grease the parchment paper. Parchment paper helps the cakes seamlessly release from the pans.</p>
+    <p><span class="step">Step 2:</span> Whisk the cake flour, salt, baking powder, and baking soda together. Set aside.</p>
+    <p><span class="step">Step 3:</span> Using a handheld or stand mixer fitted with a paddle or whisk attachment, beat the butter and sugar together on high speed until smooth and creamy, about 3 minutes. Scrape down the sides and up the bottom of the bowl with a rubber spatula as needed. Beat in the 3 eggs, 2 egg whites, and vanilla extract on high speed until combined, about 2 minutes. (Mixture will look curdled as a result of the egg liquid and solid butter combining.) Scrape down the sides and up the bottom of the bowl as needed. With the mixer on low speed, add the dry ingredients just until combined. With the mixer still running on low, pour in the buttermilk and mix just until combined. You may need to whisk it all by hand to make sure there are no lumps at the bottom of the bowl. The batter will be slightly thick.</p>
+    <p><span class="step">Step 4:</span> Pour batter evenly into cake pans. Weigh them to ensure accuracy, if desired. Bake for around 23-26 minutes or until the cakes are baked through. To test for doneness, insert a toothpick into the center of the cake. If it comes out clean, it’s done. Allow cakes to cool completely in the pans set on a wire rack. The cakes must be completely cool before frosting and assembling.</p>
+    <p><span class="step">Step 5:</span> Make the frosting: In a large bowl using a hand-held mixer or stand mixer fitted with a whisk or paddle attachment, beat the butter on medium speed until creamy, about 2 minutes. Add confectioners’ sugar, milk, vanilla extract, and salt with the mixer running on low. Increase to high speed and beat for 2 minutes. Add more confectioners’ sugar if frosting is too thin, more milk if frosting is too thick, or an extra pinch of salt if frosting is too sweet.</p>
+    <p><span class="step">Step 6:</span> Assemble and decorate: Using a large serrated knife, slice a thin layer off the tops of the cakes to create a flat surface. Discard (or crumble over ice cream!). Place 1 cake layer on your cake stand, cake turntable, or serving plate. Evenly cover the top with about 1 and 1/2 cups of frosting. Top with 2nd cake layer and evenly cover the top with about 1 and 1/2 cups of frosting. Top with the third cake layer. Spread the remaining frosting all over the top and sides. I use and recommend an icing spatula to apply the frosting.</p>
+    <p><span class="step">Step 7:</span> Refrigerate cake for at least 1 hour before slicing. This helps the cake hold its shape when cutting.</p>
+    <p><span class="step">Step 8:</span> Cover leftover cake tightly and store in the refrigerator for up to 5 days.</p>
+    <div class="recipe-mats">
+      <p id="Ingredients">Ingredients</p>
+      <ul class="resize-list">
+        <li>3 and 2/3 cups (420g) cake flour* (spoon & leveled)</li>
+        <br><li>1 teaspoon salt</li>
+        <br><li>1 teaspoon baking powder</li>
+        <br><li>3/4 teaspoon baking soda</li>
+        <br><li>1 and 1/2 cups (345g) unsalted butter, softened to room temperature</li>
+        <br><li>2 cups (400g) granulated sugar</li>
+        <br><li>3 large eggs + 2 additional egg whites, at room temperature*</li>
+        <br><li>1 Tablespoon pure vanilla extract (yes, Tbsp!)</li>
+        <br><li>1 and 1/2 cups (360ml) buttermilk, at room temperature*</li>
+        <br><p id="vanilla-in-list">Vanilla Buttercream</p>
+        <li>1 and 1/2 cups (345g) unsalted butter, softened to room temperature</li>
+        <br><li>6 cups (720g) confectioners’ sugar</li>
+        <br><li>1/3 cup (80ml) whole milk or heavy cream</li>
+        <br><li>1 and 1/2 teaspoons pure vanilla extract</li>
+        <br><li>1/8 teaspoon salt</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="page-bottom-1"><img src="https://i.imgur.com/vuzAO0Q.png" alt="website-logo" class="logo-black">
+    <div class="social-media">
+      <h3 id="social-media-padding">Social Media</h3>
+      <br><p class="media"><a href="https://discord.gg/cwYfzgA" class="a-media"><img src="https://image.flaticon.com/icons/svg/2111/2111370.svg" alt="discord.icon" class="media-image">Discord</a></p>
+      <p class="media"><img src="https://i1.wp.com/preservationbuffaloniagara.org/wp-content/uploads/2017/08/facebook-icon.png?fit=512%2C512&ssl=1" alt="facebook.icon" class="media-image">Coming Soon ...</p>
+      <p class="media"><img src="https://www.mappingmegan.com/wp-content/uploads/2017/01/icon-email-icon-clip-art-at-clker-com-vector-qafaq-e-mail-icon-trace-0.png" alt="Email.icon" class="media-image">Coming Soon ...</p>
+    </div>
+  </div>
+  <div class="last-page">
+    <h3 class="last-page-header">Website Shortcuts</h3>
+    <ul class="last-page-list">
+      <li id="last-page-home"><a href="../index.html" class="a-color">Home</a></li>
+      <li id="last-page-about"><a href="../About.html" class="a-color">About</a></li>
+      <li id="last-page-contacts"><a href="../Contacts.html" class="a-color">Contacts</a></li>
+      <li id="beginning-of-the-page"><a href="#beginning" class="a-color">Move to the Beginning of the Page</a></li>
+    </ul>
+    <p id="second-motto"><span id="id-motto-1">Try anything</span><span class="coma">,</span> <span id="id-motto-2">imagine everything</span></p>
+  </div>
+
+
+</body>
+</html>
