@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home | Visual Amazing</title>
+  <link rel = "icon" href="https://i.imgur.com/X3e62zr.png" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+
+    }
+    a {
+      text-decoration: none;
+    }
+
+    #home {
+      border-right: 2px solid black;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    #about {
+      border-right: 2px solid black;
+      padding-right: 10px;
+    }
+    .page-first-part {
+      position: relative;
+
+      background-color: rgb(235, 208, 113);
+      top: -16px;
+      overflow: hidden;
+    }
+    .logo {
+      position: absolute;
+      width: 175px;
+      padding-left: 40px;
+    }
+    .name {
+      position: relative;
+      top: 25px;
+      left: 260px;
+      font-size: 2em;
+      border-right: 2px solid black;
+      padding-right: 180px;
+      font-family: "Century Gothic", sans-serif;
+      font-weight: bold;
+    }
+    #motto {
+      position: relative;
+      left: 810px;
+      top: -50px;
+      font-family: "MV Boli", sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+    }
+    #motto-2 {
+      position: relative;
+      left: 1115px;
+      top: -45px;
+      font-family: "Lucida Calligraphy", sans-serif;
+      font-size: 1.225em;
+      font-weigth: bold;
+      padding: 0;
+      margin: 0;
+    }
+    .image-egg {
+      width: 50%;
+      height: 500px;
+      position: relative;
+      top: -18px;
+      object-fit: cover;
+    }
+    .image-salad {
+      width: 50%;
+      height: 500px;
+      position: absolute;
+      top: 173.2px;
+      object-fit: cover;
+    }
+
+    #most-recent-recipes-and-updates {
+      position: relative;
+      top: -10px;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.8em;
+      box-sizing: border-box;
+      border-left: 15px solid blue;
+      margin-left: 51px;
+      padding-left: 25px;
+      padding-top: 2.5px;
+      padding-right: 2.5px;
+      padding-bottom: 2.5px;
+      background-color: rgb(73, 164, 235);
+      width: 44%;
+    }
+    .main-index {
+      border-bottom: 2px solid black;
+      background-color: rgb(247, 207, 67);
+    }
+    .main-index a {
+      color: black;
+    }
+    #trusted-sources {
+      position: absolute;
+      font-size: 2.3em;
+      color: white;
+      z-index: 2;
+      top: 280px;
+      padding-left: 40%;
+      font-family: "Kristen ITC", sans-serif;
+      font-weight: bolder;
+    }
+    .first-recent-image{
+      float: left;
+      width: 360px;
+      margin-right: 8px;
+      margin-bottom: 6px;
+    }
+    .first-recent {
+      position: relative;
+      width: 40%;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.2em;
+      padding-left: 50px;
+    }
+    .cook {
+      font-weight: bold;
+    }
+    .recipe {
+      padding-left: 350px;
+      font-size: 0.8em;
+    }
+    .recipe-header {
+      font-weight: bold;
+    }
+    .recipe-2 {
+      width: 100%;
+      position: absolute;
+      left: 120%;
+      top: -5%;
+      font-size: 0.8em;
+    }
+    .first-recent-image-2 {
+      float: left;
+      width: 360px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+    .cook-2 {
+      font-weight: bold;
+    }
+    .recipe-header-2 {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .cook-2 {
+      font-weight: bold;
+    }
+    .first-recent-text-2 {
+      font-size: 1.3em;
+    }
+    .recipe-list-2 {
+      padding-left: 390px;
+    }
+
+    .recipe-3 {
+      width: 100%;
+      position: absolute;
+      font-size: 0.8em;
+    }
+    .first-recent-image-3 {
+      float: left;
+      width: 360px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+    .cook-3 {
+      font-weight: bold;
+    }
+    .recipe-header-3 {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .cook-3 {
+      font-weight: bold;
+    }
+    .first-recent-text-3 {
+      font-size: 1.3em;
+    }
+    .recipe-list-3 {
+      padding-left: 390px;
+    }
+    .recipe-4 {
+      position: absolute;
+      font-size: 1em;
+    }
+    .first-recent-image-4 {
+      float: left;
+      width: 360px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+    .cook-4 {
+      font-weight: bold;
+    }
+    .recipe-header-4 {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .cook-4 {
+      font-weight: bold;
+    }
+    .first-recent-text-4 {
+      font-size: 1.3em;
+    }
+    .recipe-list-4 {
+      padding-left: 390px;
+    }
+    .recipe-5 {
+      width: 100%;
+      position: absolute;
+      font-size: 1em;
+    }
+    .first-recent-image-5 {
+      float: left;
+      width: 360px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+    .cook-5 {
+      font-weight: bold;
+    }
+    .recipe-header-5 {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .cook-5{
+      font-weight: bold;
+    }
+    .first-recent-text-5 {
+      font-size: 1.3em;
+    }
+    .recipe-list-5 {
+      padding-left: 390px;
+    }
+    .recipe-6 {
+      position: absolute;
+      font-size: 1em;
+    }
+    .first-recent-image-6 {
+      float: left;
+      width: 300px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+    .cook-6 {
+      font-weight: bold;
+    }
+    .recipe-header-6 {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .cook-6 {
+      font-weight: bold;
+    }
+    .first-recent-text-6 {
+      font-size: 1.3em;
+    }
+    .recipe-list-6 {
+      padding-left: 330px;
+    }
+    .recipe-7 {
+      width: 100%;
+      position: absolute;
+      top: 150%;
+      font-size: 1em;
+      border-top: 2px outset black;
+    }
+    .first-recent-image-7 {
+      width: 215%;
+      height: 500px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+      overflow: hidden;
+    }
+    .cook-7 {
+      font-weight: bold;
+    }
+    .recipe-header-7 {
+      font-weight: bold;
+      font-size:1.5em
+
+    }
+    .cook-7{
+      font-weight: bold;
+    }
+    .first-recent-text-7 {
+      font-size: 1.3em;
+      position: relative;
+      left: 50%;
+      width: 150%;
+      top: -120px;
+      box-sizing: border-box;
+      border-radius: 40px;
+      border: 2px solid black;
+      padding: 25px
+
+    }
+    .recipe-list-7 {
+      font-size: 1.125em;
+    }
+    #popular-recipes {
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.8em;
+      box-sizing: border-box;
+      border-left: 15px solid blue;
+      margin-left: 0;
+      padding-left: 25px;
+      padding-top: 2.5px;
+      padding-right: 2.5px;
+      padding-bottom: 2.5px;
+      background-color: rgb(73, 164, 235);
+    }
+    .recipe-8 {
+      width: 65%;
+      position: absolute;
+      font-size: 1em;
+      top: 90%;
+    }
+    .first-recent-image-8 {
+      float: left;
+      width: 240px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+    .cook-8 {
+      font-weight: bold;
+    }
+    .recipe-header-8 {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .cook-8 {
+      font-weight: bold;
+    }
+    .first-recent-text-8 {
+      font-size: 1.3em;
+    }
+    .recipe-list-8 {
+      padding-left: 265px;
+    }
+    .recipe-9 {
+      width: 67%;
+      position: absolute;
+      font-size: 1em;
+      top: 90%;
+      left: 70%;
+    }
+    .first-recent-image-9 {
+      float: left;
+      width: 260px;
+      height: 240px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+    .cook-9 {
+      font-weight: bold;
+    }
+    .recipe-header-9 {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .cook-9 {
+      font-weight: bold;
+    }
+    .first-recent-text-9 {
+      font-size: 1.3em;
+    }
+    .recipe-list-9 {
+      padding-left: 265px;
+    }
+    .recipe-10 {
+      width: 70%;
+      position: absolute;
+      font-size: 1em;
+      top: 90%;
+      left: 145%;
+    }
+    .first-recent-image-10 {
+      float: left;
+      width: 260px;
+      height: 240px;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+    .cook-10 {
+      font-weight: bold;
+    }
+    .recipe-header-10 {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    .cook-10 {
+      font-weight: bold;
+    }
+    .first-recent-text-10 {
+      font-size: 1.3em;
+    }
+    .recipe-list-10 {
+      padding-left: 265px;
+    }
+    .about-place {
+
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.25em;
+      margin-top: 35%;
+      padding-left: -100px;
+      top: 125%;
+      left: -15%;
+      background-image: url(https://previews.123rf.com/images/vska/vska1606/vska160600072/58664048-abstract-digital-web-site-header-banner-technology-background.jpg);
+      box-sizing: border-box;
+      position: absolute;
+      width: 400%;
+    }
+    #description {
+      width: 50%;
+
+    }
+    .author-image {
+      float: left;
+      padding-right: 40px;
+      z-index: -1;
+      width: 250px;
+      padding-bottom: 25px;
+      padding-left: 25px;
+    }
+    .description-style {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      border: 2px solid black;
+      border-radius: 35px;
+      width: 40%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 0%;
+    }
+    .readmore-description {
+      font-family: cursive, sans-serif;
+      color: blue;
+    }
+    .description-style-2 {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      border: 2px solid black;
+      border-radius: 35px;
+      width: 40%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 0%;
+    }
+    .website-description {
+      position: absolute;
+      left: 55%;
+      width: 20%;
+      top: 0;
+    }
+    .logo-black {
+      width: 20%;
+      position: relative;
+      left: 40%;
+      top: 50%;
+      padding-top: 30px;
+    }
+    .page-bottom-1 {
+      width: 100%;
+      position: relative;
+      border: 2px solid black;
+      margin-top: 1150px;
+      background-color: black;
+    }
+    .social-media {
+      position: relative;
+      color: white;
+      left: 80%;
+      top: -150px;
+      border-right: 3px solid white;
+      z-index: 2;
+    }
+    .media {
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.125em;
+      padding: 10px;
+    }
+    .media-image {
+      width: 35px;
+      float: left;
+      padding-right: 10px;
+    }
+    #social-media-padding {
+      position: relative;
+      top: -20px;
+    }
+    .a-media {
+      color: white;
+    }
+    .last-page-header {
+      font-family: sans-serif;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+    .last-page {
+      padding-left: 25px;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.2em;
+      background-image: url(https://i2.wp.com/onaircode.com/wp-content/uploads/2017/11/Tesselation-Transition.jpg?w=1080&ssl=1);
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-right: 0px;
+      color: black;
+    }
+    .last-page-list {
+      position: relative;
+      left: 20%;
+      top: -40px;
+      color: black;
+    }
+    #last-page-home {
+      padding-bottom: 15px;
+    }
+    #last-page-about {
+      padding-bottom: 15px;
+    }
+    #last-page-contacts {
+      padding-bottom: 15px;
+    }
+    #second-motto {
+      font-family: "Forte", sans-serif;
+      font-size: 2em;
+      text-align: right;
+      position: relative;
+      top: -50px;
+      right: 130px;
+    }
+    .a-color {
+      color: blue;
+      font-weight: bolder;
+    }
+    #id-motto-1 {
+      color: orange;
+    }
+    #id-motto-2 {
+      color: green;
+    }
+    #coma {
+      color: white;
+    }
+    .public-end {
+      position: absolute;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="page-first-part">
+  <p class="main-index"><span id="home"><a href="Home.html">Home</a></span>
+    <span id="about"><a href="About.html">About</a></span>
+    <span id="contact"><a href="Contacts.html">Contacts</a></span>
+  </p>
+  <p class="logo-website-name"><img src="https://i.imgur.com/vlh4Pqs.png" alt="website-logo.img" class="logo"><span class="name"> Visual Amazing </span></p>
+  <p id="motto">Once you have it, You love it !</p>
+  <p id="motto-2">Always the Best</p>
+  </div>
+
+  <div class="page-second-part">
+    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=353&q=80" alt="Main-startup.picture" class="image-egg">
+    <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="orange.image" class="image-salad">
+  </div>
+
+
+  <h3 id="most-recent-recipes-and-updates">Most Recent Recipes and Updates</h3>
+<p id="trusted-sources">Trusted Sources <br> Everlasting Taste !</p>
+
+  <div class="first-recent">
+
+        <!-- First Recipe's Coding Starts Here -->
+        <!-- Chicken & chorizo jambalaya -->
+
+      <p class="recipe-header"><img src="https://144f2a3a2f948f23fc61-ca525f0a2beaec3e91ca498facd51f15.ssl.cf3.rackcdn.com/uploads/food_portal_data/recipes/recipe/hero_article_image/1459/letterbox_resizeimage593x426xvFDblyHbAI.jpg" alt="Chicken & chorizo jambalaya.image" class="first-recent-image">Chicken & chorizo jambalaya</p>
+      <div class="recipe">
+      <ul>
+        <li><span class="cook"> Prep: </span>10 MINS</li>
+        <li><span class="cook"> Cook: </span>45 MINS</li>
+        <li><span class="cook"> Serves: </span> 4</li>
+      </ul>
+      </div>
+      <p class="first-recent-text">Jambalaya, is a popular dish of West African, French (especially Provençal cuisine), Spanish and Native American influence, consisting mainly of meat and vegetables mixed with rice. <strong><em><a href="Recipes/Chicken & chorizo jambalaya.html">Read More</a></em></strong>.</p>
+
+        <!-- Second Recipe's Coding Starts Here -->
+        <!-- Spiced carrot & lentil soup -->
+
+      <div class="recipe-2">
+        <p class="recipe-header-2"><img src="https://img.delicious.com.au/YBYEjCzN/del/2016/06/spiced-carrot-and-lentil-soup-30911-2.jpg" alt="Spiced carrot & lentil soup.image" class="first-recent-image-2">Spiced carrot & lentil soup</p>
+        <ul class="recipe-list-2">
+          <li><span class="cook-2"> Prep: </span>10 MINS</li>
+          <li><span class="cook-2"> Cook: </span>15 MINS</li>
+          <li><span class="cook-2"> Serves: </span> 4</li>
+        </ul>
+        <p class="first-recent-text-2">Lentil soup is a soup based on lentils; it may be vegetarian or include meat, and may use brown, red, yellow or black lentils, with or without the husk. Dehulled yellow and red lentils disintegrate in cooking, making a thick soup. It is a staple food throughout Europe and the Middle East. <strong><em><a href="Recipes/Spiced carrot & lentil soup.html">Read More</a></em></strong>.</p>
+
+        <!-- 4th Recipe's Coding Starts Here -->
+        <!-- Gluten free quiche Lorraine -->
+
+        <div class="recipe-4">
+          <p class="recipe-header-4"><img src="https://img.taste.com.au/Z5sbK2ZJ/w720-h480-cfill-q80/taste/2016/11/gluten-free-quiche-lorraine-76780-1.jpeg" alt="Gluten-free quiche lorraine.image" class="first-recent-image-4">Gluten-free quiche lorraine</p>
+          <ul class="recipe-list-4">
+            <li><span class="cook-4"> Prep: </span>30 MINS</li>
+            <li><span class="cook-4"> Cook: </span>1 hr</li>
+            <li><span class="cook-4"> Serves: </span> 4</li>
+          </ul>
+          <p class="first-recent-text-4"> Eggs and bacon cooked in a pastry case has become a classic dish known as Quiche Lorraine. It makes a satisfying meal served both hot or cold. Left over Quiche Lorraine can be wrapped and frozen to enjoy on another day. <strong><em><a href="Recipes/Gluten free quiche Lorraine.html">Read More</a></em></strong>.</p>
+
+          <!-- 6th Recipe Coding Starts Here -->
+          <!-- Falafel burgers -->
+
+          <div class="recipe-6">
+            <p class="recipe-header-6"><img src="https://i.imgur.com/9nu7AsF.jpg" alt="Falafel burgers.image" class="first-recent-image-6">Falafel burgers</p>
+            <ul class="recipe-list-6">
+              <li><span class="cook-6"> Prep: </span>10 MINS</li>
+              <li><span class="cook-6"> Cook: </span>6 MINS</li>
+              <li><span class="cook-6"> Serves: </span> 4</li>
+            </ul>
+            <p class="first-recent-text-6">Falafel is a deep-fried ball or patty made from ground chickpeas, fava beans, or both. It can be served with salads, pickled vegetables, hot sauce, and drizzled with tahini-based sauces. <strong><em><a href="Recipes/Falafel burgers.html">Read More</a></em></strong>.</p>
+            </div>
+
+        </div>
+      </div>
+
+        <!-- Third Recipe's Coding Starts Here -->
+        <!-- One-pot chicken chasseur -->
+
+        <div class="recipe-3">
+          <p class="recipe-header-3"><img src="https://i0.wp.com/www.thefrenchcookingacademy.com/wp-content/uploads/2017/05/IMG_0023.jpg?fit=1280%2C720&ssl=1" alt="One-pot chicken chasseur.image" class="first-recent-image-3">One-pot chicken chasseur</p>
+          <ul class="recipe-list-3">
+            <li><span class="cook-3"> Prep: </span>20 MINS</li>
+            <li><span class="cook-3"> Cook: </span>1 hr 10 MINS</li>
+            <li><span class="cook-3"> Serves: </span> 4</li>
+          </ul>
+          <p class="first-recent-text-3">One-pot chicken chasseur is a chicken dish that is a part of French cuisine. The primary ingredients in hunter's chicken are sautéed chicken and a reduced chasseur sauce prepared using tomatoes, mushrooms, onions, white wine, brandy and tarragon. <strong><em><a href="Recipes/One-pot chicken chasseur.html">Read More</a></em></strong>.</p>
+
+          <!-- 5th Recipe's Coding Starts Here -->
+          <!-- Homemade pizza dough -->
+
+          <div class="recipe-5">
+            <p class="recipe-header-5"><img src="https://www.simplyrecipes.com/wp-content/uploads/2007/01/homemade-pizza-horiz-a-1200-768x512.jpg" alt="Homemade Pizz.image" class="first-recent-image-5">Homemade pizza dough</p>
+            <ul class="recipe-list-5">
+              <li><span class="cook-5"> Prep: </span>15 MINS</li>
+              <li><span class="cook-5"> Total Time: </span>1 hr</li>
+              <li><span class="cook-5"> Cook: </span>15 MINS</li>
+              <li><span class="cook-5"> Serves: </span> 10-12</li>
+            </ul>
+            <p class="first-recent-text-5">This is the easiest, best pizza dough recipe. With just 6 ingredients and no fancy flours required, this pizza crust requires just one bowl (no stand mixer, though you can use one if you’d like), about 3 seconds of kneading, and just 30 minutes to rise.   <strong><em><a href="Recipes/Homemade pizza dough.html">Read More</a></em></strong>.</p>
+
+            <!-- Popular Recipes -->
+            <!-- 7th Recipe's Coding Starts Here -->
+            <!-- Vanilla Cake -->
+
+            <div class="recipe-7">
+              <h3 id="popular-recipes">Popular Recipes</h3>
+              <img src="https://www.dessertfortwo.com/wp-content/uploads/2018/03/mini-vanilla-cake-recipe-720x405.jpg" alt="Vanilla Cake.image" class="first-recent-image-7">
+              <p class="recipe-header-7">Vanilla Cake</p>
+              <ul class="recipe-list-7">
+                <li><span class="cook-7"> Prep: </span>35 MINS</li>
+                <li><span class="cook-7"> Cook: </span>25 MINS</li>
+                <li><span class="cook-7"> Total Time: </span>4 hr</li>
+                <li><span class="cook-7"> Serves: </span> 12-14</li>
+              </ul>
+              <p class="first-recent-text-7">With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cake I’ve ever had. Make sure you read through the recipe and recipe notes before beginning. <strong><em><a href="Recipes/Vanilla Cake.html">Read More</a></em></strong>.</p>
+
+              <!-- Popular Recipes -->
+              <!-- 8th Recipe's Coding Starts Here -->
+              <!-- Instant Pot Chili  -->
+
+              <div class="recipe-8">
+                <p class="recipe-header-8"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190501-instant-pot-chili-square-1557157427.png?crop=1xw:1xh;center,top&resize=980:*" alt="Instant Pot Chili.image" class="first-recent-image-8">Instant Pot Chili</p>
+                <ul class="recipe-list-8">
+                  <li><span class="cook-8"> Prep: </span>15 MINS</li>
+                  <li><span class="cook-8"> Total Time: </span>1 hr</li>
+                  <li><span class="cook-8"> Serves: </span> 6</li>
+                </ul>
+                <p class="first-recent-text-8">If there's one thing the Instant Pot does well, it's chili. The pot takes away all of the legwork of standing and stirring over the stove for forever. This is now our favorite chili recipe. <strong><em><a href="Recipes/Instant Pot Chili.html">Read More</a></em></strong>.</p>
+
+                <!-- The Author's Note Place Starts Here -->
+
+                <div class="about-place">
+                  <h3 id="h3-about"><img src="https://i.imgur.com/UnJCVTp.png" alt="author.photo" class="author-image"><span class="description-style">Description About The Author</span></h3>
+                  <p id="description">I'm Fizz and have started developing the websites for more than 3 months already with excellent designs layouts. This website is my own project, created it for the purpose of developing my design skills and to put it itself as a model later for any upcoming work. <a href="About.html" class="readmore-description">Read More</a> </p>
+                   <div class="website-description">
+                     <h3><span class="description-style-2">Note About the Website </span></h3>
+                     <p class="description-2">Everything that been said here or linked is 100% right and have been verified by several people around the world. The sources as well are extremely trustworthy, so everything we brought for you will undoubtly suit your desire. <a href="About.html" class="readmore-description">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Popular Recipes -->
+              <!-- 9th Recipe's Coding Starts Here -->
+              <!-- Lemon Garlic Baked Drumsticks -->
+
+              <div class="recipe-9">
+                <p class="recipe-header-9"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190808-baked-drumsticks-0217-landscape-pf-1567089281.jpg?crop=1.00xw:0.752xh;0,0.171xh&resize=480:*" alt="Lemon Garlic Baked Drumsticks.image" class="first-recent-image-9">Lemon Garlic Baked Drumsticks</p>
+                <ul class="recipe-list-9">
+                  <li><span class="cook-9"> Prep: </span>10 MINS</li>
+                  <li><span class="cook-9"> Total Time: </span>1 hr</li>
+                  <li><span class="cook-9"> Serves: </span> 4</li>
+                </ul>
+                <p class="first-recent-text-9">These Lemon Garlic Roasted Chicken Legs are loaded with flavor, perfect for a super quick dinner. The best part? No bowls to wash, super fast prep all in one pan! <strong><em><a href="Recipes/Lemon Garlic Baked Drumsticks.html">Read More</a></em></strong>.</p>
+              </div>
+
+              <!-- Popular Recipes -->
+              <!-- 10th Recipe's Coding Starts Here -->
+              <!-- Loaded Grilled Cauliflower -->
+
+              <div class="recipe-10">
+                <p class="recipe-header-10"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190419-grilled-cauliflower-horizontal-269-1558015843.jpg?crop=1.00xw:0.753xh;0,0.0782xh&resize=480:*" alt="Loaded Grilled Cauliflower.image" class="first-recent-image-10">Loaded Grilled Cauliflower</p>
+                <ul class="recipe-list-10">
+                  <li><span class="cook-10"> Prep: </span>15 MINS</li>
+                  <li><span class="cook-10"> Total Time: </span>50 MINS</li>
+                  <li><span class="cook-10"> Serves: </span> 4</li>
+                </ul>
+                <p class="first-recent-text-10">Of all the different ways to prepare this lovely vegetable, grilling might be our favorite. The steaks still have a bit of crunch, and the smoky flavor plays well with melty cheese and creamy ranch dressing. It's a must-try. Read on to make your grilled cauli the best it can be. <strong><em><a href="Recipes/Loaded Grilled Cauliflower.html">Read More</a></em></strong>.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+
+</body>
+</html>
